@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CodeAlign</title>
+</head>
+<body>
+
+    <div id="wrap">
+        <div id="leftSide">
+            <div id="header">
+                <div id="languagesLogin">
+                    <select id="lnaguageSelector" onChange="changeLan()">
+                        <option class="menuItem" value="English">English</option>
+                        <option class="menuItem" value="Serbian_Cyr">Српски</option>
+                        <option class="menuItem" value="French">Francais</option>
+                        <option class="menuItem" value="German">Deutsche</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="spacer"></div>
+            <div id="userInput">
+                <div class="logo">
+                    <a href="index.html">
+                    <img src="images/unnamed1.png" alt="CodeAlignLogo">
+                </a>
+                </div>
+                <form action="#" id="signinForm">
+                    <div>
+                    <label for="Email of U-name" id="e_mail">Email or Username</label>
+                    <input type="text" name="Email of U-name" class="inputText">
+                    </div>
+                    <div>
+                        <label for="password" id="pw">Password</label>
+                        <input type="password" name="pw" class="inputText">
+                    </div>
+                    <button class="mainButton" type="submit" id="prijava" onclick="window.location.href='register.html'">Sign In</button>
+                </form>
+                <div id="userHelp">
+                    <p>Forgot Password?</p>
+                    <p>Sign in with company or school</p>
+                </div>
+                <div id="splitHr">
+                    <hr class="hrTag"> 
+                    <span id="orChange">OR</span>
+                    <hr class="hrTag">
+                </div>
+
+                <a href="register.html" class="secondButton" id="createAccChange">Create an Account</a>
+            </div>
+            <footer id="footerMain">
+                <p id="paraChange">Copyright © 2018, CodeAlign All Rights Reserved</p>
+                <div id="termsOU">
+                    <a href="terms.html">Terms of Use</a>
+                    <p id="ppOlicy">Privacy Policy</p>
+                </div>
+            </footer>
+        </div>
+        <div id="rightSide">
+            <div id="allContent">
+                <div id="textContent">
+                    <h1 class="upperText" id="desniDeo">Let's create the future <strong>together</strong></h1>
+                    <a href="register.html" class="secondButton" id="donjiDesni">Start your free 10-day trial!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/language.js"></script>
+</body>
+</html>

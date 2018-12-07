@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <link rel="icon" href="images/logo.png">
+    <title>CodeAlign</title>
+</head>
+<body onload="startTime()">
+    <div id="header-main">
+        <div id="logo">
+            <a href="index.html">
+            <img src="images/unnamed1.png" alt="compLogo">
+        </a>
+        </div>
+        <div id="login">
+        <a href="login.html">Login </a> /
+        <a href="register.html">Register</a>
+    </div>
+        <div id="clockHolder">
+            <p id="clock"></p>
+        </div>
+        <div id="languages">
+            <select id="lnaguageSelectorIndex" onChange="changeLan()">
+                <option class="menuItem" value="English">English</option>
+                <option class="menuItem" value="Serbian_Cyr">Српски</option>
+                <option class="menuItem" value="French">Francais</option>
+                <option class="menuItem" value="German">Deutsche</option>
+            </select>
+     </div>
+    </div>
+
+    <div id="bigImage">
+        <div id="promoLeft">
+            <img src="images/login-bg.jpg" alt="alt">
+        </div>
+        <div id="promoRight">
+            <div id="pHolder">
+            <p>Save up to 30% if you are registrating by school or a company account. If not then you can get an Annual or Personal Premium subscription for 33% off!!!</p>
+             </div>
+            <div id="btnHolder">
+              <button class="mainButton" type="submit" id="prijava"onclick="window.location.href='register.html'">Sign In</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="divider">
+    </div>
+
+    <div id="dayTrial"><div class="textHolder">
+       <p id="tecGetter">The technology learning platform</p>
+
+       <p class="smallP">Keep up with technology with expert-led courses, assessments and tools that help you build the skills you need, when you need them. For organizations, get unprecedented insight into skills strengths and weaknesses and align learning to what matters.</p>
+
+       <button class="mainButton" onclick="window.location.href='register.html'">Start a free 10-day Trial.</button>
+    </div>
+    </div>
+
+    <div id="devDiv">
+        <p id="optDesc">Success Starts Here</p>
+    </div>
+        <div id="optionsHolder">
+                <div class="hoverOptions" id="hover1">
+                      <div class="itagHolder"> <i class="fas fa-plane"></i> </div>
+                    <p class="forShow">Personal</p>
+                    <p class="smallPr">Grow your skills and advance your career</p>
+                    <i class="fas fa-spinner"></i>
+
+                    <div class="topContentHalf">
+                        <p class="displayLater">Course Library</p>
+                        <p class="displayLater">Paths</p>
+                        <p class="displayLater">Skill Assesstments</p>
+                    </div>
+
+                    <div class="bottomContentHalf">
+                            <p class="displayLaterSmall">Develop your skills with 7, 000+ expert-led courses across hundreds of topics.</p>
+                            <p class="displayLaterSmall">Build on your proficiency by knowing which courses to watch in which order, with course work curated by experts.</p>
+                            <p class="displayLaterSmall">Measure your skill level with confidence in as little as 20 questions and five minutes.</p>
+                    </div>
+                     </div>
+
+
+                <div class="hoverOptions" id="hover2">
+                     <div class="itagHolder"> <i class="fas fa-building"></i></div>
+                    <p class="forShow">Team</p>
+                    <p class="smallPr">Prepeare your team and maximize your efforts</p>
+                    <i class="fas fa-spinner"></i>
+
+                    <div class="topContentHalf">
+                        <p class="displayLater">Certification practice exams</p>
+                        <p class="displayLater">Usage Analytics</p>
+                        <p class="displayLater">Channels</p>
+                    </div>
+                    <div class="bottomContentHalf">
+                            <p class="displayLaterSmall">Prepare for professional certifications with industry-leading practice exams.</p>
+                            <p class="displayLaterSmall">View usage, hours spent learning and a leaderboard of your top members.</p>
+                            <p class="displayLaterSmall">Combine sections of different courses or paths to create a custom learning plan aligned to your team goals.</p>
+                    </div>
+                </div>
+                <div class="hoverOptions" id="hover3">
+                        <div class="itagHolder">  <i class="fal fa-space-shuttle"></i></div>
+                    <p class="forShow">Enterprise</p>
+                    <p class="smallPr">Measure progress toward busines objectives</p>
+                    <i class="fas fa-spinner"></i>
+
+                   <div class="topContentHalf">
+                        <p class="displayLater">Advanced channel analytics</p>
+                        <p class="displayLater">Advanced skill analytics</p>
+                        <p class="displayLater">Single Sign-On</p>
+                    </div>
+
+                    <div class="bottomContentHalf">
+                        <p class="displayLaterSmall">Measure progress towards business objectives by ensuring employees are completing assigned content and courses.</p>
+                        <p class="displayLaterSmall">See individual skill levels and topic-level insights to understand current proficiency and put the right people on the right projects.</p>
+                        <p class="displayLaterSmall">Streamline your team' s experience by giving learners a single username and password to access Pluralsight.</p>
+                    </div>
+                 </div>
+        </div>     
+    <footer id="footerIndex">
+        <div id="footerTop">
+            <div id="contantLinks">
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div id="otherFooterContent">
+                <div class="paddedParagraphs">
+                    <p>Solutions</p>
+                </div>
+                <div class="paddedParagraphs">
+                    <p>PLATFORM</p>
+                </div>
+                <div class="paddedParagraphs">
+                    <p>SUPPORT</p>
+                </div>
+                <div class="paddedParagraphs">
+                    <p>COMPANY</p>
+                </div>
+
+                <div class="paragraphContent">
+                    <p>Business</p>
+                    <p>Personal</p>
+                    <p>Small Business</p>
+                </div>
+
+                <div class="paragraphContent">
+                </div>
+
+                <div class="paragraphContent">
+                    <p>Help Center</p>
+                    <p>Integrations</p>
+                    <p>IP whitelist</p>
+                </div>
+
+                <div class="paragraphContent">
+                    <p>Business</p>
+                    <p>Personal</p>
+                    <p>Small Business</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="footerSocial">
+        <div id="faPlacer">
+              <a href="https://www.instagram.com/pluralsight/"><i class="fab fa-instagram"></i></a>
+               <a href="https://www.facebook.com/pluralsight"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.youtube.com/user/pluralsight"><i class="fab fa-youtube"></i></a>
+               <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEklKtOZwqiVgAAAWd-_aO4ijC8TxcbdwX_KGmgfRRdbzPdyknhC0ujMx3_Jh_ktumT2pYa8J1v5B8MsFKLKKS9BDU5IGX89oh72LSuy_xcMv_uZmRY9mE44M3Js-q86y4uGt8=&originalReferer=https://www.pluralsight.com/newsroom&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fpluralsight"><i class="fab fa-linkedin"></i></a>
+               <a href="https://twitter.com/pluralsight"><i class="fab fa-twitter"></i></a>
+        </div>
+        </div>
+        <div id="termsAndInfo">
+            <div id="terms">
+                <div id="placerA">
+                <a href="sitemap.xml">Sitemap</a> |
+                <a href="terms.html">Terms of Use</a> |
+                <a href="documentation.pdf">Documentation</a> |
+            </div>
+            </div>
+
+            <div id="copy">
+                <p>Copyright © 2004 - 2018 CodeAlign LLC. All rights reserved</p>
+            </div>
+            </div>
+    <div id="scrollTop">
+        <i class="fas fa-chevron-circle-up"></i>
+    </div>
+    <script src="js/indexJs.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jRotate.js"></script>
+</body> 
+</html>

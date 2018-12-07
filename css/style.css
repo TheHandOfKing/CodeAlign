@@ -1,0 +1,1013 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-weight: 600;
+}
+
+/*fa fa tags and stuff related to them*/
+
+.fa-plane, .fa-building, .fa-space-shuttle{
+    font-size:65px;
+    background: -webkit-linear-gradient(#c24820,#b60c6c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    margin-top:100px;
+}
+
+.itagHolder{
+    width:100%;
+   text-align: center;
+}
+.fa-spinner{
+    font-size:30px;
+    background: -webkit-linear-gradient(#c24820,#b60c6c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top:60px;
+    -webkit-animation: rotation 2s infinite linear; /*This is for rotating*/
+}
+
+@-webkit-keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }  /* here we define a starting point and the end point of rotation, pretty cool what you can find on the internet */
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}
+
+body{
+    background-color:#1a1a1a;
+    font-family: 'Roboto', sans-serif;
+    color:rgb(204, 204, 204);
+}
+
+a{
+    text-decoration: none;
+    color:rgb(216, 216, 216);
+}
+
+#wrap{
+    display:flex;
+    flex-direction:row;
+}
+
+#header{
+    width:40%;
+    height:60px;
+    background: -webkit-linear-gradient(right,#c24820,#b60c6c);
+    position:fixed;
+    top:0%;
+}
+
+#spacer{
+    margin:130px 0px;
+}
+
+#leftSide{
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    align-items:center;
+    height:100vh;
+    justify-content: center;
+}
+
+#rightSide{
+    flex:1;
+}
+
+#userInput{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width:80%;
+    padding-bottom:1rem;
+}
+
+#userInput form{
+    width:80%;
+    padding-bottom:48px;
+}
+
+.logo{
+    width: 100%;
+    margin-bottom:75px; 
+}
+
+.logo img{
+    width:450px;
+}
+
+#userInput label{
+    font-size:14px;
+    line-height: 32px;
+}
+
+.inputText{
+    margin-bottom:21px;
+    width:100%;
+    border-radius: 2px;
+    background:#181818;
+    border: 1px solid #555;
+    padding: 8px 16px;
+    line-height: 21px;
+}
+
+#userInput .secondButton, #splitHr, #userHelp{
+    width:60%;
+}
+
+#userInput #userHelp p{
+    margin-bottom:16px;
+    display: block;
+    text-align: center;
+    font-size:14px;
+}
+
+#userInput #splitHr{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 18px;
+    align-items: center;
+}
+
+    #splitHr span{
+    margin:0 auto;
+    padding: 0 12px;
+    }
+
+#splitHr .hrTag{
+    flex:auto;
+    border:none;
+    height:1px;
+    background:#aaa;
+    width:100%;
+}
+
+#footerMain{
+    text-align: center;
+    font-size: 14px;
+    max-width: 80%;
+    margin-top:80px;
+
+}
+
+#ppOlicy{
+    color: #f96816;
+}
+
+#footerMain a{
+    color: #f96816;
+}
+
+/*Content for right side, if it's like this in traversy media video, i didn't look at i
+i ain't stupid to copy code, i did use it as a reference to do some parts of this, but appart from it
+it's just look and copy */
+
+#allContent{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/login-bg.jpg") no-repeat center center / cover;
+    height:120vh;
+}
+
+#allContent .upperText{
+width:100%;
+color: white;
+margin-bottom:24px;
+font-size:48px;
+}
+
+#allContent .secondButton{
+    width:70%;
+    margin:auto;
+}
+
+#userInput .mainButton{
+   width:100%;
+}
+
+.mainButton{
+    padding: 12px 16px;
+    height: 42px;
+    display:block;
+    border:0;
+    border-radius: 2px;
+    font-weight: 600;
+    color:rgb(255, 255, 255);
+    background-color: #f96816;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+
+}
+.mainButton:hover{
+    background-color:#ff7f40;
+}
+
+.secondButton{
+    margin-top:10px;
+    padding:12px 16px;
+    height:42px;
+    display:block;
+    border:1px solid rgb(202, 202, 202);
+    border-radius: 2px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.secondButton:hover{
+    border-color:#ff7f40;
+    color:#ff7f40;
+}
+
+
+/* Language*/
+
+#lnaguageSelector{
+    margin-top:9px;
+    cursor: pointer;
+    background-color: #e76d30ad;
+    padding: 13px;
+    border:none;
+    color:rgb(255, 255, 255);
+    -webkit-appearance: none;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+
+.menuItem{
+    padding:6px;
+    cursor: pointer;
+}
+
+/*some parts of the index, the index is done 2nd because i saw the login page first and i thought it was very crispy and good looking
+so i done it first and then, at this moment im going the index page, which is going to have whatever i put there*/
+
+#header-main{
+    width:100%;
+    height:70px;
+    background-color:#e76d30ad;
+    display:flex;
+    background: -webkit-linear-gradient(right,#c24820,#b60c6c);
+    box-shadow: 0px 1px rgb(192, 13, 97);
+}
+
+#logo{
+    width:140px;
+    display:inline-flex;
+    height:inherit;
+    margin-top:3px;
+    margin-left:20px;
+}
+
+#logo img{
+    width:160px;
+    height:65px;
+}
+
+#languagesLogin{
+    display:inline-flex;
+    width:200px;
+    float:right;
+    position: absolute;
+    left:81%;
+
+}
+
+#languages{
+    display:inline-flex;
+    width:75px;
+    float:right;
+    position: absolute;
+    left:89%;
+
+}
+
+#lnaguageSelectorIndex{
+    cursor: pointer;
+    height:43px;
+    margin-top:15px;
+    padding:13px;
+    float:right;
+    background-color: #e76d30ad;
+    border:none;
+    color:rgb(255, 255, 255);
+    -webkit-appearance: none;
+    font-family: 'Roboto', 'sans-serif';
+}
+#clockHolder{
+    width:100px;
+    height:40px;
+    display:inline-flex;
+    margin-top:25px;
+    position: absolute;
+    left:94%;
+}
+
+#clock{
+    font-size:19px;
+    margin:0 auto;
+}
+/*here we mark the ending of the header tag*/
+
+
+/*Promo stuff for the big image*/
+#bigImage{
+    max-width:100%;
+    height:450px;
+}
+
+#promoLeft{
+    width:70%;
+    float:left;
+    height: inherit;
+    display:flex;
+}
+
+#promoLeft img{
+    width:100%;
+}
+
+#promoRight{
+    width:30%;
+    display:flex;
+    flex-direction: column;
+    height:inherit;
+    background-color:rgb(22, 21, 21);
+}
+
+#pHolder{
+    margin:0 auto;
+    width:90%;
+    display:flex;
+    height:80%;
+}
+
+#promoRight p{
+    text-align: center;
+    line-height:2.2rem;
+    font-size:30px;
+    color:white;
+    font-weight: 300;
+    margin:50px auto 0px auto;
+}
+
+
+#btnHolder{
+    display:inline-flex;
+    height:53px;
+    width:180px;
+    margin:0 auto 50px auto;
+}
+
+#promoRight .mainButton{
+    height:inherit;
+    width:inherit;
+    background: -webkit-linear-gradient(left,#c24820,#b60c6c);
+    font-size:18px;
+    font-weight: 100;
+}
+
+/*trial div,the middle one with the laptop*/
+
+#dayTrial{
+    width:100%;
+    height:550px;
+    background: url("../images/dayTrial.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+}
+
+#dayTrial img{
+    width: inherit;
+    height: inherit;
+}
+
+.textHolder{
+    height:inherit;
+    width:500px;
+    margin-left:250px;
+}
+
+.textHolder p{
+    font-size:48px;
+    padding-top:65px;
+    color:white;
+    font-weight: 100;
+}
+
+.textHolder .smallP{
+    color:white;
+    font-size:20px;
+    font-weight: 100;
+}
+
+.hoverOptions .smallPr{
+    color:white;
+    font-size:20px;
+    font-weight: 100;
+}
+
+.textHolder .mainButton{
+    width:60%;
+    margin-top: 30px;
+    background: -webkit-linear-gradient(left,#c24820,#b60c6c);
+    font-weight: bold;
+}
+
+/*div for dev part with js and jq code*/
+
+#devDiv{
+    width:100%;
+    height:100px;
+}
+
+#topTextIndex{
+    width:80%;
+    height:300px;
+    display:inline-flex;
+    margin-left:185px;
+}
+
+#devDiv #optDesc{
+    text-align: center;
+    color:white;
+    font-size:31px;
+    font-weight: 100;
+    padding-top:50px;
+}
+/*here we end the yellow part, and begin with the bit complicated part of coding, jq, js and other stuff, below lies the problem*/
+
+#optionsHolder{
+    display:flex;
+    width:80%;
+    margin:4rem auto;
+}
+
+.hoverOptions{
+    margin:0px 5px;
+    width:500px;
+    height:450px;
+    background-color:#222222;  
+} /* just some usualy styling, this is the main part*/
+
+
+.hoverOptions p{
+   margin-top:30px;
+   text-align: center;
+   font-weight: 100;
+   color:white;
+   font-size:28px;
+}/*styling for p*/
+
+.topContentHalf{
+    width:100%;
+    display:none;
+    flex:1;
+}
+
+.topContentHalf  .displayLater{
+    font-size: 21px;
+    width:33%; /*this in conjunction with flex 1 makes it so the p tags are aligned even with each other*/
+}
+
+.bottomContentHalf{
+    display:none;
+}
+
+.bottomContentHalf .displayLaterSmall{
+    color:rgb(78, 78, 78);
+    font-size:20px;
+    font-weight: 100;
+    margin-top:15px;
+    width:33%;
+    display:inline-flex;
+}
+
+.hoverOptions .smallP{
+    color:rgb(78, 78, 78);
+    font-size:20px;
+    font-weight: 100;
+    margin-top:15px;
+}
+
+/*Scroll top*/
+
+#scrollTop{
+    position: fixed;
+    bottom:2%;
+    right:1.2%;
+    display:none
+}
+
+#scrollTop i{
+    font-size:25px;
+    color: #ff5500;
+    cursor: pointer;
+}
+
+.divider{
+    max-width:100%;
+    background: -webkit-linear-gradient(left,#c24820,#b60c6c);
+    height:1px;
+}
+
+
+/*Footer section*/
+
+#footerIndex{
+    width:100%;
+    background-color: #222;
+    display:flex;
+}
+
+#footerTop{
+    width:100%;
+    margin:0 auto;
+    display:inline-flex;
+    align-items: stretch;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+#contantLinks{
+    width:30%;
+    margin-left:80px;
+    margin-top:80px;
+    border-right:solid 1px #353535;
+    width:185px;
+    height:250px;
+    position:relative;
+    top:-10px;
+    min-width: 185px;
+    text-transform: uppercase;
+}
+
+#contantLinks a{
+    margin-left:50px;
+    padding-top:40px;
+    display:flex;
+}
+
+#otherFooterContent{
+    width:100%;
+    height:600px;
+    padding-right:150px;
+}
+
+.paddedParagraphs{
+    width: 25%;
+    float: left;
+    padding-left: 50px;
+}
+
+.paragraphContent{
+    width: 25%;
+    float: left;
+    padding-left: 50px;
+}
+
+.paragraphContent p{
+    padding-top:7px;
+    color:#8f8f8f;
+    font-weight: 100;
+}
+.paddedParagraphs p{
+    margin-top:76px;
+    margin-bottom:25px;
+    color:white;
+}
+
+#login{
+    position: absolute;
+    height:inherit;
+    width:200px;
+    margin:27px;
+    left:80%;
+}
+
+#footerSocial{
+    width:100%;
+    height:50px;
+    background: -webkit-linear-gradient(left,#c24820,#b60c6c);
+}
+
+#faPlacer{
+    text-align: center;
+}
+
+#faPlacer i{
+    font-size:23px;
+    margin:13px;
+    font-weight: 100;
+    color:rgb(226, 226, 226);
+}
+
+#termsAndInfo{
+    width:100%;
+    height:120px;
+    background-color: #222;
+}
+
+#terms{
+    height:inherit;
+    width:50%;
+    float:left;
+}
+
+#placerA{
+    margin-top:44px;
+    width:80%;
+    float:right;
+
+}
+#terms a{
+    margin:0px 20px 0px 20px;
+    font-size:14px;
+    font-weight: 100;
+    color:white;
+}
+
+#copy{
+   float:right;
+   text-align: left;
+   width:50%;
+}
+
+#copy p{
+    margin-top:44px;
+    color:white;
+    font-weight: 100;
+}
+/*Registration Form*/
+
+#h1Pos{
+    width:100%;
+    height:100px;
+    text-align: center;
+    margin-top:100px;
+}
+
+h1{
+    font-weight: 100;
+    color:white;
+}
+
+#wrap{
+    width:100%;
+    height:100%;
+    text-align: center;
+}
+
+#registerInfo{
+    width:63%;
+    display:inline-flex;
+    height:60px;
+    margin:0 auto;
+    border-bottom:1px solid #363636;
+}
+
+#registerInfo p{
+    margin-top:20px;
+    margin-right:30px;
+    margin-left: 40px;
+}
+
+#registerInfo #accDetail{
+ border-bottom: 5px solid #ff7b39;
+}
+
+#informationReg{
+    margin:0 auto;
+    width:60%;
+    margin-top:65px;
+}
+
+#mistake{
+    width:40%;
+    display:inline-flex;
+    border-bottom:1px solid #363636;
+}
+
+#mistake h6{
+    font-weight: 100;
+    margin-right:5px;
+}
+
+#mistake a{
+    font-size:12px;
+    font-weight: 100;
+    color: #ff7b39;
+    margin-bottom:20px;
+}
+
+#registerHolder{
+width:80%;
+display:flex;
+}
+
+#registerForm label{
+    display:block;
+    margin-bottom:15px;
+    margin-top:15px;
+    color:#686868;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+#registerForm .inputTextReg{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    color: #f2f2f2;
+    background-color: #363636;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 8px 16px;
+}
+
+#registerForm select{
+    width:90%;
+    height: 2.5125rem;
+}
+
+#registerForm option{
+    font-weight: 100;
+}
+
+#leftHolder{
+    float: left;
+    width:46%;
+}
+
+#rightHolder{
+    display:block;
+    width:50%;
+    margin-left:250px;
+}
+
+#paymentMethods{
+    margin-bottom:4px;
+    width:50%;
+    height:270px;
+    margin-left:60px;
+}
+
+#mistake2{
+    margin-right:150px;
+    width:30%;
+    float:right;
+    border-bottom:1px solid #363636;
+}
+#mistake2 h3{
+    padding-bottom:16.5px;
+}
+#price{
+    margin-left:160px;
+    margin-top:30px;
+    border-bottom:1px solid #363636;
+    height:100px;
+    width:70%;
+}
+
+#paymentMethods{
+    display:block;
+}
+
+#price p{
+    margin:10px 0px;
+    font-weight: 100;
+}
+#paymentLeft{
+    float:left;
+}
+
+#paymentRight{
+    float:right;
+    padding-bottom:10px;
+}
+
+.testEmail{
+    display:flex;
+    margin-top: 5px;
+    color:red;
+    font-weight: 100;
+    font-size:12px;
+}
+
+.hidden{
+    display:none;
+}
+
+#checkboxSubmit{
+    margin-left:160px;
+    margin-top:30px;
+}
+
+#checkboxSubmit input[type=checkbox]{
+    float:left;
+    margin-right:6px;
+}
+
+#checkboxSubmit p{
+    font-size:12px;
+    display:flex;
+    font-weight: 100;
+}
+
+#checkboxSubmit input[type=submit]{
+    width:100%;
+    margin-left:20px;
+    margin-top:50px;
+    padding:10px;
+    background-color: gray;
+    border:0px;
+    color:white;
+}
+
+#checkboxChecker{
+    display:block !important;
+}
+
+.enabled{
+    background-color:#ff7b39;
+}
+/*about page*/
+#about{
+    width: 100%;
+    height:700px;
+}
+
+#aboutAuthor{
+    margin:180px auto;
+    width:40%;
+}
+
+#aboutAuthor p{
+    margin-top:40px;
+    line-height: 25px;
+    color:white;
+    font-weight: 100;
+    font-size:21px;
+}
+
+/*contactME page*/
+#contact{
+    width:100%;
+    height:700px;
+
+}
+#contactInfo p{
+    margin-top:30px;
+    font-weight: 100;
+}
+
+#contactInfo{
+    width:50%;
+    margin:0 auto;
+    color:white;
+    text-align: center;
+    margin-top:150px;
+}
+
+textarea{
+    width:100%;
+    height:200px;
+    margin-top:50px;
+    resize: none;
+}
+
+#contactInfo input[type=submit]{
+    width:60%;
+    margin-top:50px;
+    padding:10px;
+    background-color: #ff7b39;
+    border:0px;
+    color:white;
+}
+
+/*Terms of Use*/
+
+#termsOfUse{
+    width:100%;
+    text-align: center;
+    margin:150px 0px;
+}
+
+#termsOfUse p{
+    margin:10px;
+}
+
+@media(min-width:1200px){
+    #leftSide{
+        flex:4;
+    }
+
+    #rightSide{
+        flex:6;
+    }
+
+    #footerMain{
+        margin-top:340px;
+    }
+    #spacer{
+        margin:240px 0;
+    }
+
+    
+}
+
+@media(max-width:1600px){
+    #allContent{
+
+            height:143vh;
+
+    }
+}
+
+@media(max-width:1200px){
+    #rightSide{
+        display:none;
+    }
+
+    #promoRight{
+        width:100%;
+    }
+    
+    #promoLeft{
+        display:none;
+    }
+
+
+    #header{
+        width:100%;
+    }
+
+    #spacer{
+        margin:300px 0;
+    }
+
+    #leftSide{
+        flex:1;
+    }
+
+    #rightSide{
+        flex:1;
+    }
+
+}
+
+
+@media(max-width: 768px){
+    #rightSide{
+        display:none;
+    }
+
+    #leftSide{
+        justify-content: start;
+        margin-top:4vh;
+    }
+
+    #userInput .logo{
+        margin-bottom:2vh;
+
+    }
+
+    #userInput .inputText{
+        margin-bottom:12px;
+
+    }
+    #header{
+        width:100%;
+
+    }
+
+    #footerMain{
+        margin-top:500px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #footerMain{
+        margin-top:350px;
+    }
+    #spacer{
+        margin:320px 0;
+    }
+} 

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <link rel="icon" href="images/logo.png">
+    <title>CodeAlign</title>
+</head>
+<body onload="startTime()">
+        <div id="header-main">
+                <div id="logo">
+                        <a href="index.html">
+                                <img src="images/unnamed1.png" alt="compLogo">
+                            </a>
+                </div>
+                <div id="login">
+                <a href="login.html">Login </a> /
+                <a href="">Register</a>
+            </div>
+                <div id="clockHolder">
+                    <p id="clock"></p>
+                </div>
+                <div id="languages">
+                    <select id="lnaguageSelectorIndex" onChange="changeLan()">
+                        <option class="menuItem" value="English">English</option>
+                        <option class="menuItem" value="Serbian_Cyr">Српски</option>
+                        <option class="menuItem" value="French">Francais</option>
+                        <option class="menuItem" value="German">Deutsche</option>
+                    </select>
+             </div>
+            </div>
+        <div id="h1Pos">
+        <h1>Simple pricing. No hassle.</h1>
+        </div>
+        <div id="wrap">
+        <div id="registerInfo">
+            <p id="accDetail">Account Details</p>
+            <p>Payment Detail</p>
+        </div>
+    </div>
+    <div id="informationReg">
+     <div id="mistake">
+         <h6>Already have an account?</h6>  <a href="login.html">Log in</a>
+     </div>
+     <div id="mistake2">
+         <h3>Purchase Options</h6>
+     </div>
+     <div id="registerHolder">
+     <form id="registerForm" action="#"><div id="leftHolder">
+            <label class="leftLabel" for="firstName">First Name*</label>
+            <input class="inputTextReg" name="firstName" type="text" id="testName" required><p class="testEmail hidden" id="paraName">First name is empty or incorrect</p>
+            <label class="leftLabel" for="eMailUser">Personal E-Mail*</label> 
+            <input class="inputTextReg" name="eMailUser" type="text" id="testEmailUser"> <p class="testEmail hidden" id="paraEmailUser">E-mail not correct or empty</p>
+            <label class="leftLabel" for="companyName">Company Name</label> 
+            <input class="inputTextReg" name="companyName" type="text" id="testCompany"> <p class="testEmail hidden" id="paraCompany">Company Name empty or incorrect</p>
+     </div>
+
+     <div id="rightHolder">
+            <label class="rightLabel" for="lastName">Last Name*</label>
+            <input class="inputTextReg" name="lastName" type="text" id="testLname"><p class="testEmail hidden" id="paraLname">Last Name cannot be the first name</p>
+            <label class="rightLabel" for="eMailCompany">Company E-Mail</label> 
+            <input class="inputTextReg" name="eMailCompany" type="text" id="testEmailCompany"><p class="testEmail hidden" id="paraEmailCompany">Company E-mail empty or incorrect</p>
+            <label for="select">Select Your Country</label>
+            <select class="inputTextReg" name="select" id="countrySelect">
+                <option> </option>
+            </select>
+     </div>
+    </form>
+    <div id="paymentMethods">
+        <div id="price">
+        <div id="paymentRight">
+                <p>Individual</p>
+                <p>299$</p>
+        </div>
+            <div id="paymentLeft">
+                <p>Plan:</p>    
+                <p>Price:</p>
+        </div>
+        </div>
+        <div id="checkboxSubmit">
+            <input type="checkbox" name="checkbox" id="checkboxChecker"><p>By checking here and continuing, I agree to the CodeAlign Terms of Use</p>
+            <input type="submit" name="submit" id="grayed" disabled>
+        </div>
+
+    </div>
+</div>
+        </div>
+</body>
+<script src="js/clock.js"></script>
+<script src="js/register.js"></script>
+</html>
